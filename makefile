@@ -1,0 +1,9 @@
+dev:
+	go run cmd/logreader/main.go
+test:
+	go test -v ./...
+coverage:
+	go test -coverprofile=coverage.out ./...
+	go tool cover -html=coverage.out
+covegage-term:
+	go test -cover ./...
